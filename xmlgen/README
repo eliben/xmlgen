@@ -1,0 +1,64 @@
+./build.sh
+
+After that run './xmlgen'
+
+./xmlgen -f 1     produces ~116 MiB
+./xmlgen -f 0.5   produces 58 MiB
+
+----
+
+xmlgen, version 0.92 by Florian Waas (flw@mx4.org)
+Copyright (C) Florian Waas
+
+
+1. What is xmlgen?
+
+xmlgen is an XML data generator which produces scaled documents according
+to the DTD specified in The XML Benchmark Project. xmlgen is part of the
+benchmark suite and can be found at http://www.xml-benchmark.org. It has
+been one of the major design goals to achieve a maximum degree of portability
+and to date, xmlgen has been used on a number of platforms including Windows,
+Solaris, various Linux distributions, and IRIX.
+xmlgen was designed to produce large and very large XML documents in an
+efficient manner with low constant main memory requirements.
+
+
+2. How to use xmlgen?
+
+xmlgen comes with a number of options to influence the output behavior:
+
+ -f <factor>    scaling factor of the document, float value;
+		0 produces the "minimal document"
+
+ -o <file>	direct output to file
+
+ -h 		show usage info
+
+ -d 		use doctype preamble
+
+ -i 		renders the document somewhat more readable
+
+ -v 		shows current version, intended for bug reporting
+
+ -t 		display elapsed time, meant for profiling
+
+ -s <cnt>	split the doc in smaller chunks of only <cnt> elements each;
+		useful for systems which cannot cope with large input 
+		documents
+
+ -e		dumps the DTD the doc is complying with (version 0.92 and later)
+
+
+3. Why is there no noise in the text?
+
+Well, it's Shakespeare. In fact, the text has only little noise and many
+text indexing programs seem to be a little baffled by that. We plan to
+change this in a future release together with a more contemporary vocabulary. 
+Also, Shakespeare is not quite politically correct.
+
+
+4. Can I control the level of recursion?
+
+No, we purposely reduced the number of tuning parameters to only one single
+one: the scaling factor. Otherwise, the space of possible combinations is 
+growing too quickly.
