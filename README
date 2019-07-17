@@ -1,8 +1,7 @@
-I originally downloaded this code from http://www.xml-benchmark.org, but that
-site is no longer active, and I couldn't find the code online.
-
-So I'm placing it here, as is. It's copyrighted (C) to Florian Waas. See the
-original contents of the README below the build instructions.
+I originally downloaded this code from http://www.xml-benchmark.org a few years
+ago. Since that site is no longer active and I can't find anywhere else online
+to point to, I'm posting the code here, as is. It's copyrighted (C) by Florian
+Waas. See the original contents of the README below the build instructions.
 
 The tool is described in a paper from 2002, a copy of which is also in this
 repo.
