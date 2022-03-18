@@ -1,10 +1,13 @@
 I originally downloaded this code from http://www.xml-benchmark.org a few years
-ago. Since that site is no longer active and I can't find anywhere else online
-to point to, I'm posting the code here, as is. It's copyrighted (C) by Florian
-Waas. See the original contents of the README below the build instructions.
+ago. That site is no longer active, so I've posted the code here, as is.
+It's copyrighted (C) by Florian Waas. See the original contents of the README
+below the build instructions.
 
 The tool is described in a paper from 2002, a copy of which is also in this
 repo.
+
+Update from March 2022: a kind reader informed me that the source for xmlgen
+can also be obtained from https://projects.cwi.nl/xmark/generator.html
 
 ----
 
